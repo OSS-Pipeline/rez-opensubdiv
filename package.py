@@ -34,6 +34,7 @@ with scope("config") as config:
 uuid = "opensubdiv-{version}".format(version=str(version))
 
 def commands():
+    env.PATH.prepend("{root}/bin")
     env.LD_LIBRARY_PATH.prepend("{root}/lib")
 
     # Helper environment variables.
