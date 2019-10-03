@@ -13,17 +13,35 @@ description = \
     """
 
 requires = [
-    "gcc-6+",
     "cmake-3+",
-    "python-2.7+<3",
+    "gcc-6+",
     "glew-2+",
     "glfw-3+",
     "ptex-2.1.28+",
-    "tbb-2017.U6+",
+    "python-2.7+<3",
+    "tbb-2017.U6+"
 ]
 
 variants = [
     ["platform-linux"]
+]
+
+tools = [
+    "far_perf",
+    "far_regression",
+    "farViewer",
+    "glEvalLimitv",
+    "glFVarViewer",
+    "glImaging",
+    "glPaintTest",
+    "glPtexViewer",
+    "glShareTopology",
+    "glStencilViewer",
+    "glViewer",
+    "hbr_baseline",
+    "hbr_regression",
+    "osd_regression",
+    "stringify"
 ]
 
 build_system = "cmake"
