@@ -41,16 +41,15 @@ cd ${BUILD_PATH}
 cmake \
     ${BUILD_PATH}/.. \
     -DCMAKE_INSTALL_PREFIX=${INSTALL_PATH} \
-    -DCMAKE_C_FLAGS=-fPIC \
-    -DCMAKE_CXX_FLAGS=-fPIC \
-    -DTBB_LOCATION=${REZ_TBB_ROOT} \
-    -DPTEX_LOCATION=${REZ_PTEX_ROOT} \
+    -DCMAKE_C_FLAGS="-fPIC" \
+    -DCMAKE_CXX_FLAGS="-fPIC" \
+    -DNO_CUDA=1 \
+    -DNO_OPENCL=1 \
     -DGLEW_LOCATION=${REZ_GLEW_ROOT} \
     -DGLFW_LOCATION=${REZ_GLFW_ROOT} \
-    -DZLIB_ROOT=${REZ_ZLIB_ROOT} \
-    -DNO_CUDA=1 \
-    -DNO_OPENCL=1
-
+    -DPTEX_LOCATION=${REZ_PTEX_ROOT} \
+    -DTBB_LOCATION=${REZ_TBB_ROOT} \
+    -DZLIB_ROOT=${REZ_ZLIB_ROOT}
 echo -e "\n"
 echo -e "[CONFIGURE] Finished configuring OpenSubdiv-${OPENSUBDIV_VERSION}!"
 echo -e "\n"
