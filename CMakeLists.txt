@@ -16,7 +16,7 @@ set(OPENSUBDIV_ARCHIVE_VERSION "${OPENSUBDIV_VERSION_MAJOR}_${OPENSUBDIV_VERSION
 # OpenSubdiv
 rez_set_archive(
     OPENSUBDIV_URL opensubdiv/OpenSubdiv-${OPENSUBDIV_ARCHIVE_VERSION}.tar.gz
-    https://github.com/PixarAnimationStudios/OpenSubdiv/archive/v-${OPENSUBDIV_ARCHIVE_VERSION}.tar.gz
+    https://github.com/PixarAnimationStudios/OpenSubdiv/archive/v${OPENSUBDIV_ARCHIVE_VERSION}.tar.gz
 )
 
 # The environment variable REZ_TMP_PATH is meant to point to a location such as "/tmp/rez".

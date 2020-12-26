@@ -1,6 +1,6 @@
 name = "opensubdiv"
 
-version = "3.3.3"
+version = "3.4.3"
 
 authors = [
     "Pixar"
@@ -14,8 +14,8 @@ description = \
 
 requires = [
     "cmake-3+",
+    "doxygen-1.8+",
     "gcc-6+",
-    "glew-2+",
     "glfw-3+",
     "ptex-2.1.28+",
     "python-2.7+<3",
